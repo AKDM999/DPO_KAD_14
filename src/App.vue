@@ -23,7 +23,7 @@
         <BookCard
           v-for="book in filteredBooks"
           :key="book.id"
-          :book="
+          :book="book"
           @toggle="toggleBook(book.id)"
           @delete="deleteBook(book.id)"
           @rate="rateBook(book.id, $event)"
